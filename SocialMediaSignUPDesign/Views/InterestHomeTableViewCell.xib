@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="InterestHomeTableViewCell" rowHeight="56" id="KGk-i7-Jjw" customClass="InterestHomeTableViewCell" customModule="qualiffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-Ql-TWK">
+                        <rect key="frame" x="10" y="5" width="70.5" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F30-zW-5p8">
+                                <rect key="frame" x="15" y="10" width="40.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="F30-zW-5p8" secondAttribute="bottom" constant="10" id="DT2-bG-ICo"/>
+                            <constraint firstAttribute="height" constant="40" id="qYn-LI-GZW"/>
+                            <constraint firstItem="F30-zW-5p8" firstAttribute="leading" secondItem="Dgt-Ql-TWK" secondAttribute="leading" constant="15" id="ufa-yg-013"/>
+                            <constraint firstItem="F30-zW-5p8" firstAttribute="top" secondItem="Dgt-Ql-TWK" secondAttribute="top" constant="10" id="v22-Ng-F39"/>
+                            <constraint firstAttribute="trailing" secondItem="F30-zW-5p8" secondAttribute="trailing" constant="15" id="zus-VH-VVJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dgt-Ql-TWK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="VQe-jU-phI"/>
+                    <constraint firstItem="Dgt-Ql-TWK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XhK-rK-XmQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Dgt-Ql-TWK" secondAttribute="bottom" constant="5" id="z6x-zv-Num"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="Dgt-Ql-TWK" id="Xpq-21-fdd"/>
+                <outlet property="lblName" destination="F30-zW-5p8" id="Df0-nq-HgN"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

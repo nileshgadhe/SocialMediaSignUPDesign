@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedInterestCollectionViewCell" id="gTV-IL-0wX" customClass="SelectedInterestCollectionViewCell" customModule="qualiffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="63"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnm-2K-4tS">
+                        <rect key="frame" x="10" y="10" width="140" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYf-fC-BQ0">
+                                <rect key="frame" x="10" y="10" width="95" height="23"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_crossFilled" translatesAutoresizingMaskIntoConstraints="NO" id="fBG-08-QrF">
+                                <rect key="frame" x="115" y="14" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Azp-dl-9ZG"/>
+                                    <constraint firstAttribute="width" secondItem="fBG-08-QrF" secondAttribute="height" multiplier="1:1" id="r6S-uc-txc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AYf-fC-BQ0" secondAttribute="bottom" constant="10" id="2ee-30-bNn"/>
+                            <constraint firstAttribute="trailing" secondItem="fBG-08-QrF" secondAttribute="trailing" constant="10" id="BOq-Ro-pcf"/>
+                            <constraint firstItem="fBG-08-QrF" firstAttribute="centerY" secondItem="AYf-fC-BQ0" secondAttribute="centerY" id="YcC-zo-EtI"/>
+                            <constraint firstItem="AYf-fC-BQ0" firstAttribute="leading" secondItem="Bnm-2K-4tS" secondAttribute="leading" constant="10" id="eJc-Te-DKd"/>
+                            <constraint firstItem="fBG-08-QrF" firstAttribute="leading" secondItem="AYf-fC-BQ0" secondAttribute="trailing" constant="10" id="hSt-zg-4Im"/>
+                            <constraint firstItem="AYf-fC-BQ0" firstAttribute="top" secondItem="Bnm-2K-4tS" secondAttribute="top" constant="10" id="okK-bE-sgZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Bnm-2K-4tS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="KYk-Pi-Oyi"/>
+                <constraint firstAttribute="trailing" secondItem="Bnm-2K-4tS" secondAttribute="trailing" constant="10" id="nWI-sZ-B6Q"/>
+                <constraint firstItem="Bnm-2K-4tS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qRM-MK-10t"/>
+                <constraint firstAttribute="bottom" secondItem="Bnm-2K-4tS" secondAttribute="bottom" constant="10" id="w1R-Et-Jzv"/>
+            </constraints>
+            <size key="customSize" width="160" height="63"/>
+            <connections>
+                <outlet property="containerView" destination="Bnm-2K-4tS" id="QpI-0c-DCW"/>
+                <outlet property="imgView" destination="fBG-08-QrF" id="bsc-ub-mHe"/>
+                <outlet property="lblInterest" destination="AYf-fC-BQ0" id="HQd-Et-sam"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="114.17410714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_crossFilled" width="50" height="50"/>
+    </resources>
+</document>

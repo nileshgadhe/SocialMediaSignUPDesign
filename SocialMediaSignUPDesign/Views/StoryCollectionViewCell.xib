@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="gTV-IL-0wX" customClass="StoryCollectionViewCell" customModule="qualiffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ha9-20-uL5">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_photo" translatesAutoresizingMaskIntoConstraints="NO" id="MLL-zo-ibb">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MLL-zo-ibb" secondAttribute="height" multiplier="1:1" id="dsQ-d3-dVZ"/>
+                                    <constraint firstAttribute="height" constant="60" id="qDs-kZ-xrh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MLL-zo-ibb" secondAttribute="trailing" id="28g-Up-vd7"/>
+                            <constraint firstItem="MLL-zo-ibb" firstAttribute="top" secondItem="ha9-20-uL5" secondAttribute="top" id="GKm-lK-3BK"/>
+                            <constraint firstItem="MLL-zo-ibb" firstAttribute="leading" secondItem="ha9-20-uL5" secondAttribute="leading" id="PXX-Pw-6DC"/>
+                            <constraint firstAttribute="bottom" secondItem="MLL-zo-ibb" secondAttribute="bottom" id="mqR-bH-np4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ha9-20-uL5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J4d-tk-mSt"/>
+                <constraint firstItem="ha9-20-uL5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kh8-Vs-t7p"/>
+                <constraint firstAttribute="trailing" secondItem="ha9-20-uL5" secondAttribute="trailing" id="b21-79-Vqt"/>
+                <constraint firstAttribute="bottom" secondItem="ha9-20-uL5" secondAttribute="bottom" id="e4R-kK-aLq"/>
+            </constraints>
+            <size key="customSize" width="62" height="59"/>
+            <connections>
+                <outlet property="imgView" destination="MLL-zo-ibb" id="9Ss-tI-XqF"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="131.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile_photo" width="800" height="533.33331298828125"/>
+    </resources>
+</document>
